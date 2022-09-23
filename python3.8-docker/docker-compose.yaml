@@ -1,8 +1,0 @@
-FROM python:3.8-buster
-
-ENV CONTAINER_CODE=/opt/python3.7/code
-ENV LOCAL_CODE=~/Documents/GCP/python-docs-samples/pubsub/streaming-analytics
-
-WORKDIR ${CONTAINER_CODE}
-COPY ${LOCAL_CODE}/*  ./
-RUN pip install --no-cache-dir -r requirements.txt
